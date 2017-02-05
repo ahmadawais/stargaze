@@ -47,6 +47,8 @@ This script requires that `jq` is on your PATH. If it's not check the
 installation instructions for your system:
 
 - <https://stedolan.github.io/jq/>
+- `randomize-lines` — randomize lines for macOS
+
 
 ## Usage
 
