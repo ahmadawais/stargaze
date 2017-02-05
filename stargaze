@@ -98,7 +98,7 @@ fetch_stars() {
 get_random_repos() {
   local n="$1"
   local query='.html_url + " - " + .description'
-  jq --raw-output ".[] | $query" "$CACHE_FILE" | shuf | head -n "$n" | sed $'s/ - /\\\n/'
+  jq --raw-output ".[] | $query" "$CACHE_FILE" | rl | head -n "$n" | sed $'s/ - /\\\n/'
 }
 
 # ----- CLI Interface -----
